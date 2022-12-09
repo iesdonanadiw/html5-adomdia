@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="html5-formularios.html" method="get" autocomplete>
+        <h3>Text</h3>
+        <label>Nombre: <input name="nombre" type="text" value="Antonio" size="40" maxlength="10" pattern="[A-Za-z]{3}" 
+           placeholder="Nombre"></label>
+        <h3>Password</h3>
+        <label>Contraseña: <input type="password" name="psw" id="psw" required></label>
+        <h3>Radio</h3>
+        <input type="radio" name="gender" value="male" checked> Masculino
+        <br>
+        <input type="radio" name="gender" value="female"> Femenino
+        <br>
+        <input type="radio" name="gender" value="other"> Otros
+
+        <h3>Fecha</h3>
+        <label>Fecha: <input type="date" value="1993-06-24" name="bday" min="2000-01-02"></label>
+        <h3>Email</h3>
+        <label>Email: <input type="email" value="asd@asd.com" name="email" autocomplete="off"></label>
+
+        <h3>Criterios Música:</h3>
+        <label for="cars">Estilos:</label>
+        <select name="cars" id="cars">
+           <option value="rock">Rock</option>
+           <option value="pop">Pop</option>
+           <option value="reagge">Reagge</option>
+           <option value="metal">Metal</option>
+        </select>
+        <label for="cars">Instrumentos:</label>
+        <select name="cars" id="cars">
+           <option value="bajo">Bajo</option>
+           <option value="bateria">Batería</option>
+           <option value="guitarra">Guitarra</option>
+           <option value="voz">Voz</option>
+           <option value="vientos">Vientos</option>
+           <option value="cuerdas">Cuerdas</option>
+        </select>
+        <h3>Imagen Perfil:</h3>
+        <label>Imagen: <input type="file" name="img" multiple></label>
+       <input type="submit">
+     </form>   
+</body>
+</html>
